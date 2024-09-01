@@ -1,0 +1,134 @@
+{
+  "graphName" : "fineldapc",
+  "artifacts" : [ {
+    "id" : "com.example:fineldapc:jar",
+    "numericId" : 1,
+    "groupId" : "com.example",
+    "artifactId" : "fineldapc",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.unboundid:unboundid-ldapsdk:jar",
+    "numericId" : 2,
+    "groupId" : "com.unboundid",
+    "artifactId" : "unboundid-ldapsdk",
+    "version" : "6.0.5",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.javassist:javassist:jar",
+    "numericId" : 3,
+    "groupId" : "org.javassist",
+    "artifactId" : "javassist",
+    "version" : "3.18.2-GA",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.apache.httpcomponents:httpclient:jar",
+    "numericId" : 4,
+    "groupId" : "org.apache.httpcomponents",
+    "artifactId" : "httpclient",
+    "version" : "4.5.13",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.apache.httpcomponents:httpcore:jar",
+    "numericId" : 5,
+    "groupId" : "org.apache.httpcomponents",
+    "artifactId" : "httpcore",
+    "version" : "4.4.13",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "commons-logging:commons-logging:jar",
+    "numericId" : 6,
+    "groupId" : "commons-logging",
+    "artifactId" : "commons-logging",
+    "version" : "1.2",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "commons-codec:commons-codec:jar",
+    "numericId" : 7,
+    "groupId" : "commons-codec",
+    "artifactId" : "commons-codec",
+    "version" : "1.11",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.fine:core:jar",
+    "numericId" : 8,
+    "groupId" : "com.fine",
+    "artifactId" : "core",
+    "version" : "2.0",
+    "optional" : false,
+    "scopes" : [ "system" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.fine:third:jar",
+    "numericId" : 9,
+    "groupId" : "com.fine",
+    "artifactId" : "third",
+    "version" : "2.0",
+    "optional" : false,
+    "scopes" : [ "system" ],
+    "types" : [ "jar" ]
+  } ],
+  "dependencies" : [ {
+    "from" : "com.example:fineldapc:jar",
+    "to" : "com.unboundid:unboundid-ldapsdk:jar",
+    "numericFrom" : 0,
+    "numericTo" : 1,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:fineldapc:jar",
+    "to" : "org.javassist:javassist:jar",
+    "numericFrom" : 0,
+    "numericTo" : 2,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.apache.httpcomponents:httpclient:jar",
+    "to" : "org.apache.httpcomponents:httpcore:jar",
+    "numericFrom" : 3,
+    "numericTo" : 4,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.apache.httpcomponents:httpclient:jar",
+    "to" : "commons-logging:commons-logging:jar",
+    "numericFrom" : 3,
+    "numericTo" : 5,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.apache.httpcomponents:httpclient:jar",
+    "to" : "commons-codec:commons-codec:jar",
+    "numericFrom" : 3,
+    "numericTo" : 6,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:fineldapc:jar",
+    "to" : "org.apache.httpcomponents:httpclient:jar",
+    "numericFrom" : 0,
+    "numericTo" : 3,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:fineldapc:jar",
+    "to" : "com.fine:core:jar",
+    "numericFrom" : 0,
+    "numericTo" : 7,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "com.example:fineldapc:jar",
+    "to" : "com.fine:third:jar",
+    "numericFrom" : 0,
+    "numericTo" : 8,
+    "resolution" : "INCLUDED"
+  } ]
+}
