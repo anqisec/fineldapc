@@ -41,6 +41,9 @@ godzillajsp: 加密器: JAVA_AES_BASE64 密码: fine 密钥: ldapc 请求路径:
 https://unam4.github.io/2024/06/23/%E6%9F%90%E6%8A%A5%E8%A1%A8%E6%9C%80%E6%96%B0%E5%8F%8D%E5%BA%8F%E5%88%97%E6%BC%8F%E6%B4%9E/
 https://unam4.github.io/2024/06/03/%E6%96%B0jdk%E5%8E%9F%E7%94%9F%E5%85%A5%E5%8F%A3%E5%88%B0jndi/
 
+### 修复
+官网确认 2024-05以前版本受到影响，升级之后版本不收此漏洞影响。
+
 ### 免责声明
 该工具仅用于安全自查检测
 
